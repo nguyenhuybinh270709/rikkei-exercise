@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 6</title>
+  </head>
+  <body>
+    <h2>Hồ sơ thông tin cá nhân</h2>
+
+    <form action="#" method="POST">
+      <fieldset>
+        <legend>Thông tin cá nhân</legend>
+
+        <div>
+          <label for="fullname">Tên:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Nhập họ và tên..."
+          />
+        </div>
+
+        <div>
+          <label for="dob">Ngày sinh:</label>
+          <input type="date" id="dob" name="dob" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Thông tin liên hệ</legend>
+
+        <div>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@email.com"
+          />
+        </div>
+
+        <div>
+          <label for="phone">Số điện thoại:</label>
+          <input type="tel" id="phone" name="phone" placeholder="012345678" />
+        </div>
+      </fieldset>
+
+      <div>
+        <label for="notes">Ghi chú bổ sung:</label>
+        <textarea
+          id="notes"
+          name="notes"
+          placeholder="Nhập ghi chú của bạn tại đây..."
+        ></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Lưu hồ sơ</button>
+      </div>
+    </form>
+  </body>
+</html>

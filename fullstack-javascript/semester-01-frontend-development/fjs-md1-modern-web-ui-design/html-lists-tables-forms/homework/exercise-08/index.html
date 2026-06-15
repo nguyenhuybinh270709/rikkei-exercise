@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 8</title>
+  </head>
+  <body>
+    <h2>Đăng Ký Đặt Vé Sự Kiện Âm Nhạc</h2>
+
+    <form action="#" method="POST">
+      <div>
+        <label for="fullname">Họ và tên:</label>
+        <input
+          type="text"
+          id="fullname"
+          name="fullname"
+          placeholder="Nhập họ và tên..."
+          required
+          minlength="3"
+          maxlength="50"
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="ticket-quantity">Số lượng vé:</label>
+        <input
+          type="number"
+          id="ticket-quantity"
+          name="ticket_quantity"
+          value="5"
+          min="1"
+          max="5"
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="vip-code">Mã vé VIP (Đã cấp sẵn):</label>
+        <input
+          type="text"
+          id="vip-code"
+          name="vip_code"
+          value="MUSIC-VIP-2026"
+          readonly
+        />
+      </div>
+      <br />
+
+      <div>
+        <label for="discount-code">Mã giảm giá nội bộ:</label>
+        <input
+          type="text"
+          id="discount-code"
+          name="discount_code"
+          value="NOT-ELIGIBLE"
+          disabled
+        />
+      </div>
+      <br />
+
+      <div>
+        <button type="submit">Xác nhận đặt vé</button>
+      </div>
+    </form>
+  </body>
+</html>
