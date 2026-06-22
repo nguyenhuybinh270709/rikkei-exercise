@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 9</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #f8fafc;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .container {
+        display: flex;
+        gap: 2rem;
+        width: 100%;
+        max-width: 1000px;
+        align-items: stretch;
+      }
+      .card {
+        background: #ffffff;
+        flex: 1;
+        padding: 2rem;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        text-align: center;
+      }
+      .card:nth-child(2) {
+        background: #e6f2ff;
+        border: 2px solid #0066cc;
+        transform: scale(1.03);
+      }
+      .title {
+        font-size: 1.5rem;
+        color: #1e293b;
+        margin-bottom: 1rem;
+      }
+      .card:nth-child(2) .title {
+        color: #0066cc;
+      }
+      .price {
+        font-size: 2rem;
+        font-weight: bold;
+        color: #1e293b;
+        margin-bottom: 1.5rem;
+      }
+      .price span {
+        font-size: 1rem;
+        font-weight: normal;
+        color: #64748b;
+      }
+      .features {
+        list-style: none;
+        margin-bottom: 2rem;
+      }
+      .features li {
+        font-size: 0.95rem;
+        color: #475569;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+      }
+      .btn {
+        background-color: #0066cc;
+        color: #ffffff;
+        border: none;
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+      }
+      .card:hover {
+        border-color: #0066cc;
+      }
+      .card:hover .title {
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h3 class="title">Gói Cơ Bản</h3>
+        <div class="price">199.000đ<span>/tháng</span></div>
+        <ul class="features">
+          <li>1 Tài khoản người dùng</li>
+          <li>Hỗ trợ qua thư điện tử</li>
+          <li>5GB Dung lượng lưu trữ</li>
+        </ul>
+        <button class="btn">Chọn gói này</button>
+      </div>
+
+      <div class="card">
+        <h3 class="title">Gói Chuyên Nghiệp</h3>
+        <div class="price">499.000đ<span>/tháng</span></div>
+        <ul class="features">
+          <li>5 Tài khoản người dùng</li>
+          <li>Hỗ trợ ưu tiên 24/7</li>
+          <li>50GB Dung lượng lưu trữ</li>
+        </ul>
+        <button class="btn">Chọn gói này</button>
+      </div>
+
+      <div class="card">
+        <h3 class="title">Gói Doanh Nghiệp</h3>
+        <div class="price">999.000đ<span>/tháng</span></div>
+        <ul class="features">
+          <li>Không giới hạn tài khoản</li>
+          <li>Hỗ trợ kỹ thuật riêng</li>
+          <li>Không giới hạn dung lượng</li>
+        </ul>
+        <button class="btn">Chọn gói này</button>
+      </div>
+    </div>
+  </body>
+</html>

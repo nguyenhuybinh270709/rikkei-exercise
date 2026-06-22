@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 10</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background:
+          linear-gradient(rgba(44, 62, 80, 0.85), rgba(44, 62, 80, 0.85)),
+          url("https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=1200")
+            no-repeat center center;
+        background-size: cover;
+        padding: 20px;
+      }
+      .card {
+        text-align: center;
+        color: #ffffff;
+        max-width: 800px;
+        width: 100%;
+      }
+      .name {
+        font-size: 3.5rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+        position: relative;
+        display: inline-block;
+      }
+      .name::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 15%;
+        width: 70%;
+        height: 4px;
+        background-color: #1abc9c;
+        border-radius: 2px;
+      }
+      .job-title {
+        font-size: 24px;
+        font-weight: 300;
+        color: #bdc3c7;
+        margin-bottom: 15px;
+      }
+      .description {
+        font-size: 14px;
+        color: #95a5a6;
+        line-height: 1.6;
+        max-width: 600px;
+        margin: 0 auto 25px;
+      }
+      .highlight-text {
+        font-size: 14px;
+        font-weight: bold;
+        color: #1abc9c;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        margin-bottom: 35px;
+      }
+      .btn-cv {
+        background-color: transparent;
+        color: #1abc9c;
+        border: 2px solid #1abc9c;
+        padding: 12px 35px;
+        font-size: 15px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      .btn-cv:hover {
+        color: white;
+        background-color: #1abc9c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="name">Nguyễn Huy Bình</h1>
+      <div class="job-title">Frontend Developer</div>
+      <p class="description">
+        Thiết kế trải nghiệm người dùng, sáng tạo giao diện độc đáo, tối ưu hóa
+        tương tác.
+      </p>
+      <div class="highlight-text">Sáng tạo để dẫn đầu</div>
+      <button class="btn-cv">Tải CV</button>
+    </div>
+  </body>
+</html>

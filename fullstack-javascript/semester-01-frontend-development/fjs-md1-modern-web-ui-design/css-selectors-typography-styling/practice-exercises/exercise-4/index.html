@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #f8fafc;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+      .container {
+        background: #ffffff;
+        width: 100%;
+        max-width: 650px;
+        padding: 40px;
+        border-radius: 8px;
+      }
+      .title {
+        font-size: 28px;
+        color: #2c3e50;
+        margin-bottom: 8px;
+      }
+      .title + .desc {
+        font-style: italic;
+        letter-spacing: 1px;
+        color: #7f8c8d;
+        font-size: 16px;
+        margin-bottom: 25px;
+      }
+      .list {
+        padding-left: 20px;
+      }
+      .list > li {
+        color: #c0392b;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 12px;
+      }
+      .list a {
+        text-decoration: none;
+        color: inherit;
+      }
+      .list > li:first-child a {
+        color: #2980b9;
+        text-decoration: underline;
+      }
+      .sub-list {
+        list-style-type: square;
+        padding-left: 25px;
+        margin-top: 8px;
+      }
+      .sub-list li {
+        color: #555555;
+        font-size: 15px;
+        font-weight: normal;
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Lộ trình học Lập trình Web Frontend</h2>
+      <p class="desc">
+        Bắt đầu hành trình trở thành lập trình viên Frontend chuyên nghiệp với
+        các khóa học dưới đây.
+      </p>
+
+      <ul class="list">
+        <li><a href="#">Nhập môn HTML và CSS</a></li>
+        <li>Lập trình JavaScript cơ bản</li>
+        <li>
+          Lập trình ReactJS (Khóa chính)
+          <ul class="sub-list">
+            <li>React Router cho điều hướng</li>
+            <li>Quản lý state với Redux</li>
+          </ul>
+        </li>
+        <li>Xây dựng dự án thực tế</li>
+      </ul>
+    </div>
+  </body>
+</html>
