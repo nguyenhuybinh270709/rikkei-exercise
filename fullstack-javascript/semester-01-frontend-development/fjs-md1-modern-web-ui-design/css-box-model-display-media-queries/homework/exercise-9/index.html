@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 9</title>
+
+    <style>
+      body {
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px 10px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 1px solid #e0e0e0;
+        padding-bottom: 40px;
+        font-size: 0;
+      }
+
+      .title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #000000;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+
+      .product-card {
+        display: inline-block;
+        width: 33.3333%;
+        box-sizing: border-box;
+        padding: 30px 20px;
+        border-right: 1px solid #e0e0e0;
+        text-align: center;
+        vertical-align: top;
+        font-size: 14px;
+      }
+
+      .product-card:last-child {
+        border-right: none;
+      }
+
+      .product-name {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333333;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+
+      .product-desc {
+        font-size: 13px;
+        color: #777777;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        min-height: 40px;
+      }
+
+      .product-price {
+        font-size: 15px;
+        font-weight: bold;
+        color: #e74c3c;
+        margin-bottom: 20px;
+      }
+
+      .btn-buy {
+        background-color: #3498db;
+        color: #ffffff;
+        border: none;
+        padding: 10px 24px;
+        font-size: 13px;
+        font-weight: bold;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+      }
+
+      .btn-buy:hover {
+        background-color: #2980b9;
+      }
+
+      @media (max-width: 768px) {
+        .container {
+          padding: 10px;
+          background-color: transparent;
+          border: none;
+        }
+
+        .product-card {
+          display: block;
+          width: 100%;
+          border: 1px solid #e0e0e0;
+          background-color: #ffffff;
+          margin-bottom: 20px;
+          padding: 25px 20px;
+        }
+
+        .product-card:last-child {
+          margin-bottom: 0;
+        }
+
+        .product-desc {
+          min-height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Danh Sách Sản Phẩm (Responsive)</h2>
+
+      <div class="product-card">
+        <h3 class="product-name">Laptop Gaming Cao Cấp</h3>
+        <p class="product-desc">
+          Hiệu năng vượt trội, màn hình 144Hz cho trải nghiệm chơi game mượt mà.
+        </p>
+        <div class="product-price">25.000.000 VND</div>
+        <a href="#" class="btn-buy">Mua ngay</a>
+      </div>
+      <div class="product-card">
+        <h3 class="product-name">Điện Thoại Chụp Ảnh Khủng</h3>
+        <p class="product-desc">
+          Camera 108MP, pin trâu 5000mAh, sạc nhanh 65W.
+        </p>
+        <div class="product-price">12.500.000 VND</div>
+        <a href="#" class="btn-buy">Mua ngay</a>
+      </div>
+      <div class="product-card">
+        <h3 class="product-name">Tai Nghe Chống Ồn Chủ Động</h3>
+        <p class="product-desc">
+          Cách âm tuyệt đối, âm thanh vòm 360 độ, nghe nhạc cực đã.
+        </p>
+        <div class="product-price">4.200.000 VND</div>
+        <a href="#" class="btn-buy">Mua ngay</a>
+      </div>
+    </div>
+  </body>
+</html>
