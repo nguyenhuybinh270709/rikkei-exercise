@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 6</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: sans-serif;
+        background-color: #ffffff;
+        color: #333333;
+        padding: 40px 20px;
+      }
+
+      .container {
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+
+      .heading {
+        text-align: center;
+        font-size: 28px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 40px;
+      }
+
+      .project-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .project-card {
+        display: flex;
+        background-color: #ffffff;
+        border: 1px solid #eef2f5;
+        border-radius: 8px;
+        overflow: hidden;
+        align-items: center;
+      }
+
+      .project-card.reverse {
+        flex-direction: row-reverse;
+      }
+
+      .project-image {
+        flex: 1;
+        width: 50%;
+        height: 350px;
+        overflow: hidden;
+      }
+
+      .project-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .project-content {
+        flex: 1;
+        width: 50%;
+        padding: 40px;
+      }
+
+      .project-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 15px;
+      }
+
+      .project-description {
+        font-size: 16px;
+        color: #666666;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="heading">Các Dự Án Nổi Bật</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <div class="project-image">
+            <img
+              src="https://picsum.photos/id/0/600/400"
+              alt="Dự án Web App E-commerce"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Dự án Web App E-commerce</h3>
+            <p class="project-description">
+              Hệ thống quản lý bán hàng toàn diện, tích hợp thanh toán trực
+              tuyến, giỏ hàng minh bạch và quản lý kho thông minh. Ứng dụng xây
+              dựng trên React, đem lại tốc độ nhanh và trải nghiệm mượt mà.
+            </p>
+          </div>
+        </div>
+
+        <div class="project-card reverse">
+          <div class="project-image">
+            <img
+              src="https://picsum.photos/id/60/600/400"
+              alt="Dự án Data Dashboard ERP"
+            />
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Dự án Data Dashboard ERP</h3>
+            <p class="project-description">
+              Bảng điều khiển phân tích dữ liệu trực quan cho doanh nghiệp. Cho
+              phép người dùng tuỳ chỉnh báo cáo, thống kê doanh thu theo thời
+              gian thực với biểu đồ tương tác 3D mạnh mẽ.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

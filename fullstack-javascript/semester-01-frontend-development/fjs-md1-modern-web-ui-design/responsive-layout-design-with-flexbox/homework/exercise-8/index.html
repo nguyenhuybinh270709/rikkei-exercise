@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 8</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        background-color: #1a1a1a;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .gallery-wrapper {
+        background-color: #222222;
+        width: 100%;
+        max-width: 1000px;
+        padding: 40px;
+        border-radius: 8px;
+      }
+
+      .gallery-title {
+        text-align: center;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+      }
+
+      .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        height: 600px;
+      }
+
+      .gallery-item {
+        width: calc(33.333% - 14px);
+        height: calc(33.333% - 14px);
+        border-radius: 12px;
+        overflow: hidden;
+      }
+
+      .gallery-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+      }
+
+      @media (max-width: 768px) {
+        .gallery-container {
+          height: auto;
+          gap: 15px;
+        }
+        .gallery-item {
+          width: calc(33.333% - 10px);
+          aspect-ratio: 1 / 1;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gallery-wrapper">
+      <h2 class="gallery-title">Photo Gallery</h2>
+
+      <div class="gallery-container">
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/64/600/600" alt="Photo 1" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/10/600/600" alt="Photo 2" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/28/600/600" alt="Photo 3" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/64/600/600" alt="Photo 4" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/10/600/600" alt="Photo 5" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/28/600/600" alt="Photo 6" />
+        </div>
+
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/29/600/600" alt="Photo 7" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/43/600/600" alt="Photo 8" />
+        </div>
+        <div class="gallery-item">
+          <img src="https://picsum.photos/id/46/600/600" alt="Photo 9" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

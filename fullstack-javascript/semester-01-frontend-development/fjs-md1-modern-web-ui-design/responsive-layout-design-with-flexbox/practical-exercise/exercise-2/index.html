@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .profile-card {
+        background-color: #ffffff;
+        border-radius: 8px;
+        padding: 40px;
+        width: 320px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background-color: #ffcc00;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        overflow: hidden;
+        margin-bottom: 25px;
+      }
+
+      .avatar img {
+        width: 80%;
+        height: auto;
+      }
+
+      .name {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333333;
+        margin-bottom: 10px;
+      }
+
+      .quote {
+        font-size: 14px;
+        color: #666666;
+        font-style: italic;
+        line-height: 1.4;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="profile-card">
+      <div class="avatar">
+        <img
+          src="https://api.dicebear.com/7.x/bottts/svg?seed=avatar"
+          alt="Avatar"
+        />
+      </div>
+      <h2 class="name">Nguyễn Văn A</h2>
+      <p class="quote">"Thái độ quyết định trình độ"</p>
+    </div>
+  </body>
+</html>

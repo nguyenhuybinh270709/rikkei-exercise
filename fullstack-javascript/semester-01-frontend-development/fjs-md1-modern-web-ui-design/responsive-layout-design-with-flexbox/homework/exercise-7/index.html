@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 7</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: sans-serif;
+        background-color: #f8fafc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+      }
+
+      .pricing-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        max-width: 1000px;
+        width: 100%;
+        height: 500px;
+      }
+
+      .card {
+        background-color: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 40px 30px;
+        width: 280px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 380px;
+      }
+
+      .card.highlight {
+        background-color: #007bff;
+        color: #ffffff;
+        border: none;
+        box-shadow: 0 10px 25px -5px rgba(0, 123, 255, 0.4);
+        align-self: flex-start;
+        height: 380px;
+      }
+
+      .card-title {
+        font-size: 20px;
+        font-weight: bold;
+        color: #334155;
+        margin-bottom: 15px;
+      }
+
+      .card.highlight .card-title {
+        color: #ffffff;
+      }
+
+      .card-price {
+        font-size: 32px;
+        font-weight: bold;
+        color: #1e293b;
+        margin-bottom: 30px;
+      }
+
+      .card.highlight .card-price {
+        color: #ffffff;
+      }
+
+      .card-features {
+        list-style: none;
+        text-align: left;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .card-features li {
+        font-size: 14px;
+        color: #64748b;
+      }
+
+      .card.highlight .card-features li {
+        color: #e2e8f0;
+      }
+
+      .card-btn {
+        display: block;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: #24354b;
+        color: #ffffff;
+        transition: opacity 0.2s;
+      }
+
+      .card.highlight .card-btn {
+        background-color: #ffffff;
+        color: #007bff;
+      }
+
+      .card-btn:hover {
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pricing-container">
+      <div class="card">
+        <div>
+          <h3 class="card-title">Cơ bản</h3>
+          <div class="card-price">Miễn phí</div>
+          <ul class="card-features">
+            <li>1 Dự án</li>
+            <li>100MB Lưu trữ</li>
+            <li>Hỗ trợ Email</li>
+          </ul>
+        </div>
+        <button class="card-btn">Bắt đầu ngay</button>
+      </div>
+
+      <div class="card highlight">
+        <div>
+          <h3 class="card-title">Chuyên nghiệp</h3>
+          <div class="card-price">99.000đ/th</div>
+          <ul class="card-features">
+            <li>Dự án Không Giới Hạn</li>
+            <li>10GB Lưu trữ</li>
+            <li>Hỗ trợ 24/7</li>
+            <li>Domain Tuỳ chỉnh</li>
+          </ul>
+        </div>
+        <button class="card-btn">Nâng Cấp</button>
+      </div>
+
+      <div class="card">
+        <div>
+          <h3 class="card-title">Doanh nghiệp</h3>
+          <div class="card-price">Liên hệ</div>
+          <ul class="card-features">
+            <li>Gói tuỳ chọn đầy đủ</li>
+            <li>Dung lượng cao nhất</li>
+            <li>Tư vấn riêng biệt</li>
+          </ul>
+        </div>
+        <button class="card-btn">Tìm hiểu thêm</button>
+      </div>
+    </div>
+  </body>
+</html>
