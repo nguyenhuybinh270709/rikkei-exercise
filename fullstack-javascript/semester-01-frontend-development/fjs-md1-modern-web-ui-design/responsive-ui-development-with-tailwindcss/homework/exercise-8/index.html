@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Exercise 8</title>
+  </head>
+  <body
+    class="bg-slate-100 dark:bg-[#111827] min-h-screen flex items-center justify-center p-4 relative transition-colors duration-300"
+  >
+    <div
+      class="bg-white dark:bg-[#1f293d] w-full max-w-sm rounded-2xl shadow-xl p-8 flex flex-col items-center border border-slate-100 dark:border-slate-800 transition-colors duration-300"
+    >
+      <h3 class="text-xl font-bold text-slate-800 dark:text-white mb-1">
+        Tour Đà Lạt
+      </h3>
+      <p class="text-sm text-slate-400 dark:text-slate-400 mb-6">
+        3 Ngày 2 Đêm
+      </p>
+
+      <div class="flex items-baseline justify-center gap-1 mb-6">
+        <span class="text-3xl font-extrabold text-[#1d5bf0] dark:text-[#3b82f6]"
+          >2.500.000đ</span
+        >
+        <span class="text-xs text-slate-500 dark:text-slate-400">/khách</span>
+      </div>
+
+      <div
+        class="w-full space-y-4 mb-8 text-center text-sm font-medium text-slate-600 dark:text-slate-300"
+      >
+        <p>Khách sạn 4 sao trung tâm</p>
+        <p>Xe Limousine đưa đón tận nơi</p>
+        <p>Vé tham quan tất cả các điểm</p>
+      </div>
+
+      <button
+        class="w-full bg-[#1d5bf0] hover:bg-blue-700 dark:bg-[#3b82f6] dark:hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-xl transition-colors cursor-pointer text-sm tracking-wide"
+      >
+        ĐẶT TOUR NGAY
+      </button>
+    </div>
+
+    <button
+      onclick="document.documentElement.classList.toggle('dark')"
+      class="absolute bottom-6 right-6 bg-slate-200 dark:bg-slate-800 text-slate-700 dark:text-slate-300 font-medium py-2 px-4 rounded-xl shadow-md text-sm cursor-pointer transition-colors"
+    >
+      Đổi Giao Diện
+    </button>
+  </body>
+</html>
